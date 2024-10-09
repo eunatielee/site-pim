@@ -60,7 +60,7 @@ header p {
 }
 
 /* Botão de Chamada para Ação */
-.cta-button, .cadastro-button {
+.cta-button {
     display: inline-block;
     margin-top: 20px;
     padding: 15px 30px;
@@ -80,14 +80,6 @@ header p {
     transform: translateY(-2px);
 }
 
-.cadastro-button {
-    background-color: #88a294;
-}
-
-.cadastro-button:hover {
-    background-color: #2f855a;
-    transform: translateY(-2px);
-}
 
 /* Estilos do footer */
 footer {
