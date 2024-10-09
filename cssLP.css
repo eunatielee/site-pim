@@ -15,9 +15,9 @@ body {
     align-items: center;
     min-height: 100vh;
     background-image: url('Fazenda.jpg');
-    background-size: cover; /* Cobre toda a tela */
-    background-position: center; /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 /* Container principal da página */
@@ -79,6 +79,24 @@ header p {
 
 .cta-button:hover {
     background-color: #2f855a;
+    transform: translateY(-2px);
+}
+
+.cadastro-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1em;
+    color: white;
+    background-color: #88a294;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.3s;
+    word-wrap: break-word;
+}
+
+.cadastro-button:hover {
+    background-color:#2f855a;
     transform: translateY(-2px);
 }
 

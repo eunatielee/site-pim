@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fornecedores.css">
+    <title>Controle de Fornecedores</title>
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Green Start</h2>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Pesquisar</a></li>
+                    <li><a href="#">Alertas e Avisos</a></li>
+                    <li><a href="#">Histórico de Pedidos</a></li>
+                </ul>
+            </nav>
+           
+         <a id="logoutButton" href="login.html"> sair</a>
+        </aside>
+        <script>
+            document.getElementById('logoutButton').addEventListener('click', function() {
+                const confirmLogout = confirm("Deseja sair de sua conta?");
+                if (confirmLogout) {
+                    window.location.href = "login.html"; // Redireciona para a página de login
+                }
+            });
+        </script>
+
+        <main class="main-content">
+            <header>
+                <h1>Controle de Fornecedores</h1>
+                <div class="search-bar">
+                    <input type="text" placeholder="Pesquisar fornecedores...">
+                    <button class="cadastrar-btn"><a href="cadastro.html">Cadastrar fornecedor</a></button>
+                </div>
+                <div class="user">
+                    <a href="#">
+                        <img class="user-img" src="imagemUsuario.png" alt="imagem usuario">
+                        Ricardo
+                    </a>
+                </div>
+            
+            </header>
+            <section class="fornecedores">
+                <h2>Fornecedores recentes</h2>
+                <div class="fornecedor-grid">
+                    <a href="#" class="fornecedor-card"> <img class="imagem-fornecedor" src="basf.png" alt="imagem basf"> <br><span>Fornecedor de fertilizantes</span></a>
+                    <a href="#" class="fornecedor-card"><img class="imagem-fornecedor" src="cargill.jpg" alt="imagem cargill">Cargill<br><span>Prestador de serviços</span></a>
+                    <a href="#" class="fornecedor-card"><img class="imagem-fornecedor" src="bayer.jpeg" alt="imagem bayer">Bayer<br><span>Fornecedor de sementes</span></a>
+                    <a href="#" class="fornecedor-card"><img class="imagem-fornecedor" src="plantei.jpeg" alt="imagem plantei">Plantei<br><span>Fornecedor de mudas</span></a>
+                </div>
+                <div class="spacer"></div> 
+                <h2>Outros fornecedores</h2>
+                <div class="fornecedor-grid">
+                    <a href="#" class="fornecedor-card"><img class="imagem-fornecedor" src="monsanto.png" alt="imagem monsanto">Monsanto<br><span>Fornecedor de fertilizantes</span></a>
+                    <a href="#" class="fornecedor-card"><img class="imagem-fornecedor" src="jbs.png" alt="imagem jbs">JBS<br><span>Fornecedor de produtos</span></a>
+                    <a href="#" class="fornecedor-card"><img class="imagem-fornecedor" src="bunge.png" alt="imagem bunge">Bunge<br><span>Fornecedor de alimentos</span></a>
+                    <a href="#" class="fornecedor-card"><img class="imagem-fornecedor" src="tsv.png" alt="tsv">TSV<br><span>Fornecedor de sementes</span></a>
+                </div>
+            </section>
+            <button class="new-order-btn"><a href="criar-pedido.html">Criar novo pedido</a></button>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
